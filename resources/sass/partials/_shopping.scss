@@ -1,0 +1,35 @@
+@import "./variables.scss";
+
+#shopping {
+    background-color: $primaryColor;
+    color: #fff;
+
+    .container {
+        height: 120px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+
+        li {
+            display: inline-block;
+
+            a {
+                text-transform: uppercase;
+                padding: 10px 0px;
+                margin: 0px 30px;
+
+                &:hover {
+                    color: $darkGrey;
+                }
+
+                img {
+                    height: 40px;
+                    max-width: 45px;
+                    vertical-align: middle;
+                    margin: 10px;
+                }
+            }
+        }
+    }
+}
