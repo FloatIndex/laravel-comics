@@ -6,10 +6,13 @@
 
     <ul>
         <li>
-            <a href="#">characters</a>
+            <a href="{{route('home')}}">home</a>
         </li>
         <li>
             <a href="{{route('comics')}}">comics</a>
+        </li>
+        <li>
+            <a href="#">characters</a>
         </li>
         <li>
             <a href="#">movies</a>

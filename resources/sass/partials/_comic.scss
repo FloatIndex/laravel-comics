@@ -1,0 +1,173 @@
+@import "./variables.scss";
+
+#comic-detail {
+    border-top: solid $primaryColor 60px;
+
+    .clear-wrap {
+        &::after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .container {
+            width: 60%;
+            position: relative;
+
+            .comic-thumb {
+                position: absolute;
+                height: 230px;
+                transform: translateY(-105%);
+                border: 1px solid $white;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+
+                span {
+                    text-transform: uppercase;
+                    color: $white;
+                    background-color: $lightBlue;
+                    position: absolute;
+                    padding: 0px 5px;
+                }
+
+                .bottom {
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    text-align: center;
+                }
+            }
+
+            .comic-preview {
+                margin-top: 50px;
+                margin-bottom: 50px;
+                float: left;
+                width: 70%;
+    
+                .comic-title {
+                    color: $darkBlue;
+                    text-transform: uppercase;
+                    font-size: 2rem;
+                    margin-bottom: 20px;
+                }
+    
+                .bar {
+                    background-color: $green;
+                    display: flex;
+                    border-bottom: 1px solid black;
+                    font-weight: 600;
+                    margin-bottom: 10px;
+    
+                    .bar-left {
+                        border-right: 1px solid black;
+                        color: $lightGreen;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 10px 20px;
+                        flex-basis: 70%;
+                        flex-grow: 1;
+    
+                        .price {
+                            color: $white;
+                        }
+                    }
+    
+                    .bar-right {
+                        color: $white;
+                        padding: 10px 20px;
+                        flex-grow: 0;
+    
+                        span::after {
+                            content: '\25BE';
+                            margin-left: 10px;
+                        }
+                    }
+                }
+    
+                .description {
+                    font-weight: 200;
+                }
+            }
+    
+            .adv {
+                float: right;
+                width: 30%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                padding-left: 30px;
+                position: relative;
+    
+                img {
+                    width: 100%;
+                }
+    
+                span {
+                    text-transform: uppercase;
+                    font-size: 0.9rem;
+                    position: absolute;
+                    top: -20px;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .comic-specs {
+        background-color: $lightGrey;
+        padding-bottom: 90px;
+
+        .container {
+            width: 60%;
+            display: flex;
+            gap: 50px;
+
+            .column {
+                width: 50%;
+    
+                .specs-title {
+                    color: $darkBlue;
+                    padding: 30px 0px;
+                    border-bottom: 1px solid $gray;
+                }
+    
+                .row {
+                    display: flex;
+                    padding: 7px 0px;
+                    border-bottom: 1px solid $gray;
+                    font-size: 0.8rem;
+                    
+                    .left-col {
+                        color: $darkBlue;
+                        width: 40%;
+                    }
+                    
+                    .right-col {
+                        width: 60%;
+
+                        ul {
+                            :not(:last-child):after {
+                                content: ',';
+                                color: $black;
+                            }
+
+                            li {
+                                display: inline;
+                                color: $primaryColor;
+                            }
+                        }
+
+                        .series {
+                            color: $primaryColor;
+                            text-transform: uppercase;
+                        }
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}

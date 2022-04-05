@@ -22,3 +22,14 @@ Route::get('/comics', function () {
     $data = ['comics' => $comics];
     return view('comics', $data);
 }) -> name('comics');
+
+Route::get('/comic/{comic_id}', function ($comic_id) {
+    $comics = config('comics');
+    if(is_numeric($comic_id) && $comic_id >=0 && $comic_id < count($comics)) {
+        $comic = $comics[$comic_id];
+        return view('comic', ['comic' => $comic]);
+    } else {
+        // abort(404, 'Fumetto non trovato');
+    }
+    
+}) -> name('comic');

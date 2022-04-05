@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;
 
-700&display=swap);/*!
+300;400;600;700&display=swap);/*!
  * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  * Copyright 2022 Fonticons, Inc.
@@ -7778,6 +7778,8 @@ readers do not read off random characters that represent icons */
   font-display: block;
   src: url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-v4compatibility.woff2?786e6b3373bab47e928c81c26eeccb08) format("woff2"), url(/fonts/vendor/@fortawesome/fontawesome-free/webfa-v4compatibility.ttf?0d6f5f1852affca569715821fe4aa29b) format("truetype");
   unicode-range: U+F041,U+F047,U+F065-F066,U+F07D-F07E,U+F080,U+F08B,U+F08E,U+F090,U+F09A,U+F0AC,U+F0AE,U+F0B2,U+F0D0,U+F0D6,U+F0E4,U+F0EC,U+F10A-F10B,U+F123,U+F13E,U+F148-F149,U+F14C,U+F156,U+F15E,U+F160-F161,U+F163,U+F175-F178,U+F195,U+F1F8,U+F219,U+F250,U+F252,U+F27A; }
+@charset "UTF-8";
+
 /*!
  * Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -7966,6 +7968,39 @@ nav ul li a:hover {
   background-size: cover;
 }
 
+#shopping {
+  background-color: #0082F9;
+  color: #fff;
+}
+
+#shopping .container ul {
+  height: 120px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#shopping .container ul li {
+  display: inline-block;
+}
+
+#shopping .container ul li a {
+  text-transform: uppercase;
+  padding: 10px 0px;
+  margin: 0px 30px;
+}
+
+#shopping .container ul li a:hover {
+  color: #1C1C1C;
+}
+
+#shopping .container ul li a img {
+  height: 40px;
+  max-width: 45px;
+  vertical-align: middle;
+  margin: 0px 10px;
+}
+
 #home .container {
   padding-top: 60px;
   padding-bottom: 100px;
@@ -7985,14 +8020,17 @@ nav ul li a:hover {
 
 #home .container .panel-display .panel img {
   width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #home .container .panel-display .panel.small {
-  max-width: 30%;
+  width: 33%;
 }
 
 #home .container .panel-display .panel.large {
-  max-width: 60%;
+  width: 67%;
 }
 
 #home .container .community {
@@ -8000,7 +8038,31 @@ nav ul li a:hover {
 }
 
 #home .container .community .title {
+  font-size: 2rem;
   text-transform: uppercase;
+  margin-top: -10px;
+  color: #0082F9;
+}
+
+#home .container .community .article {
+  margin-top: 10px;
+}
+
+#home .container .community .article .article-title {
+  text-transform: uppercase;
+}
+
+#home .container .community .article .article-date {
+  text-transform: uppercase;
+  color: #969595;
+  font-weight: 700;
+  display: block;
+  margin-top: 3px;
+}
+
+#home .container .community .article .article-preview {
+  font-weight: 400;
+  margin-top: 5px;
 }
 
 #comicsList {
@@ -8033,10 +8095,6 @@ nav ul li a:hover {
   width: 16.6666666667%;
   padding: 0px 10px;
   margin-bottom: 30px;
-}
-
-#comicsList .container .comic:hover {
-  cursor: pointer;
 }
 
 #comicsList .container .comic:hover p {
@@ -8075,37 +8133,169 @@ nav ul li a:hover {
   background-color: transparent;
 }
 
-#shopping {
-  background-color: #0082F9;
-  color: #fff;
+#comic-detail {
+  border-top: solid #0082F9 60px;
 }
 
-#shopping .container {
-  height: 120px;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
+#comic-detail .clear-wrap::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-#shopping .container li {
-  display: inline-block;
+#comic-detail .clear-wrap .container {
+  width: 60%;
+  position: relative;
 }
 
-#shopping .container li a {
+#comic-detail .clear-wrap .container .comic-thumb {
+  position: absolute;
+  height: 230px;
+  transform: translateY(-105%);
+  border: 1px solid #FFF;
+}
+
+#comic-detail .clear-wrap .container .comic-thumb img {
+  height: 100%;
+  width: auto;
+}
+
+#comic-detail .clear-wrap .container .comic-thumb span {
   text-transform: uppercase;
-  padding: 10px 0px;
-  margin: 0px 30px;
+  color: #FFF;
+  background-color: #09A9D9;
+  position: absolute;
+  padding: 0px 5px;
 }
 
-#shopping .container li a:hover {
-  color: #1C1C1C;
+#comic-detail .clear-wrap .container .comic-thumb .bottom {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 
-#shopping .container li a img {
-  height: 40px;
-  max-width: 45px;
-  vertical-align: middle;
-  margin: 10px;
+#comic-detail .clear-wrap .container .comic-preview {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  float: left;
+  width: 70%;
+}
+
+#comic-detail .clear-wrap .container .comic-preview .comic-title {
+  color: #013F5E;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#comic-detail .clear-wrap .container .comic-preview .bar {
+  background-color: #55BA59;
+  display: flex;
+  border-bottom: 1px solid black;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#comic-detail .clear-wrap .container .comic-preview .bar .bar-left {
+  border-right: 1px solid black;
+  color: #9AEA81;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  flex-basis: 70%;
+  flex-grow: 1;
+}
+
+#comic-detail .clear-wrap .container .comic-preview .bar .bar-left .price {
+  color: #FFF;
+}
+
+#comic-detail .clear-wrap .container .comic-preview .bar .bar-right {
+  color: #FFF;
+  padding: 10px 20px;
+  flex-grow: 0;
+}
+
+#comic-detail .clear-wrap .container .comic-preview .bar .bar-right span::after {
+  content: "\25BE";
+  margin-left: 10px;
+}
+
+#comic-detail .clear-wrap .container .comic-preview .description {
+  font-weight: 200;
+}
+
+#comic-detail .clear-wrap .container .adv {
+  float: right;
+  width: 30%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  position: relative;
+}
+
+#comic-detail .clear-wrap .container .adv img {
+  width: 100%;
+}
+
+#comic-detail .clear-wrap .container .adv span {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+
+#comic-detail .comic-specs {
+  background-color: #F6F6F6;
+  padding-bottom: 90px;
+}
+
+#comic-detail .comic-specs .container {
+  width: 60%;
+  display: flex;
+  gap: 50px;
+}
+
+#comic-detail .comic-specs .container .column {
+  width: 50%;
+}
+
+#comic-detail .comic-specs .container .column .specs-title {
+  color: #013F5E;
+  padding: 30px 0px;
+  border-bottom: 1px solid #D8D8D8;
+}
+
+#comic-detail .comic-specs .container .column .row {
+  display: flex;
+  padding: 7px 0px;
+  border-bottom: 1px solid #D8D8D8;
+  font-size: 0.8rem;
+}
+
+#comic-detail .comic-specs .container .column .row .left-col {
+  color: #013F5E;
+  width: 40%;
+}
+
+#comic-detail .comic-specs .container .column .row .right-col {
+  width: 60%;
+}
+
+#comic-detail .comic-specs .container .column .row .right-col ul :not(:last-child):after {
+  content: ",";
+  color: #000;
+}
+
+#comic-detail .comic-specs .container .column .row .right-col ul li {
+  display: inline;
+  color: #0082F9;
+}
+
+#comic-detail .comic-specs .container .column .row .right-col .series {
+  color: #0082F9;
+  text-transform: uppercase;
 }
 

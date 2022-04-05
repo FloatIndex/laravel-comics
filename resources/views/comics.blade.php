@@ -3,6 +3,7 @@
 @section('title', 'DC - Comics')
 
 @section('content')
+
     <section id="comicsList">
         <div class="container">
 
@@ -10,10 +11,12 @@
                 current-series
             </div>
 
-            @foreach ($comics as $comic)
+            @foreach ($comics as $key => $comic)
                 <div class="comic">
-                    <img src="{{$comic['thumb']}}" :alt="{{$comic['series']}}">
-                    <p>{{$comic['series']}}</p>
+                    <a href="/comic/{{$key}}">
+                        <img src="{{$comic['thumb']}}" :alt="{{$comic['series']}}">
+                        <p>{{$comic['series']}}</p>
+                    </a>
                 </div>
             @endforeach
 

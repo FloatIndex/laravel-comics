@@ -1,0 +1,31 @@
+#shopping {
+  background-color: #969595;
+}
+
+#shopping .container ul {
+  height: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+#shopping .container ul li {
+  display: inline-block;
+}
+
+#shopping .container ul li a {
+  text-transform: uppercase;
+  padding: 10px 0px;
+  margin: 0px 30px;
+}
+
+#shopping .container ul li a:hover {
+  color: #1C1C1C;
+}
+
+#shopping .container ul li a img {
+  height: 40px;
+  max-width: 45px;
+  vertical-align: middle;
+}
+
