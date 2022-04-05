@@ -7876,6 +7876,11 @@ nav ul li a:hover {
   color: #0082F9;
 }
 
+nav ul li a.active {
+  border-color: #0082F9;
+  color: #0082F9;
+}
+
 .footer-top {
   height: 350px;
   background-image: url("/img/footer-bg.jpg");
@@ -7981,13 +7986,12 @@ nav ul li a:hover {
 }
 
 #shopping .container ul li {
-  display: inline-block;
+  padding: 0px 30px;
 }
 
 #shopping .container ul li a {
   text-transform: uppercase;
   padding: 10px 0px;
-  margin: 0px 30px;
 }
 
 #shopping .container ul li a:hover {
@@ -7998,7 +8002,7 @@ nav ul li a:hover {
   height: 40px;
   max-width: 45px;
   vertical-align: middle;
-  margin: 0px 10px;
+  margin-right: 10px;
 }
 
 #home .container {

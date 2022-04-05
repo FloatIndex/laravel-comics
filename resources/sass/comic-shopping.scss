@@ -4,30 +4,25 @@
     background-color: $secondaryColor;
 
     .container {
+        width: 60%;
 
         ul {
-            height: 90px;
+            height: 70px;
             display: flex;
-            justify-content: space-evenly;
             align-items: stretch;
+            border-left: 1px solid $white;
 
             li {
-                display: inline-block;
+                padding: 0px 10px;
+                display: flex;
+                align-items: center;
+                border-right: 1px solid $white;
     
                 a {
-                    text-transform: uppercase;
-                    padding: 10px 0px;
-                    margin: 0px 30px;
-    
-                    &:hover {
-                        color: $darkGrey;
-                    }
-    
+                    display: block;
+
                     img {
-                        height: 40px;
-                        max-width: 45px;
-                        vertical-align: middle;
-                        // margin: 10px;
+                        vertical-align: text-top;
                     }
                 }
             }

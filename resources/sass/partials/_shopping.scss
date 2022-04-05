@@ -13,12 +13,11 @@
             align-items: center;
 
             li {
-                display: inline-block;
+                padding: 0px 30px;
     
                 a {
                     text-transform: uppercase;
                     padding: 10px 0px;
-                    margin: 0px 30px;
     
                     &:hover {
                         color: $darkGrey;
@@ -28,7 +27,7 @@
                         height: 40px;
                         max-width: 45px;
                         vertical-align: middle;
-                        margin: 0px 10px;
+                        margin-right: 10px;
                     }
                 }
             }

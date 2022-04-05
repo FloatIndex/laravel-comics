@@ -6,10 +6,10 @@
 
     <ul>
         <li>
-            <a href="{{route('home')}}">home</a>
+            <a class="{{Request::route()->getName() == 'home' ? 'active' : ''}}" href="{{route('home')}}">home</a>
         </li>
         <li>
-            <a href="{{route('comics')}}">comics</a>
+            <a class="{{Request::route()->getName() == 'comics' ||  Request::route()->getName() == 'comic' ? 'active' : ''}}" href="{{route('comics')}}">comics</a>
         </li>
         <li>
             <a href="#">characters</a>

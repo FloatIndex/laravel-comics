@@ -41,6 +41,11 @@ nav {
                     color: $primaryColor;
                 }
             }
+
+            a.active {
+                border-color: $primaryColor;
+                color: $primaryColor;
+            }
         }
     }
 }
